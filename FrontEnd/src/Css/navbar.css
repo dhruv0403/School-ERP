@@ -1,0 +1,132 @@
+.navbar {
+    background: none;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    align-items: center;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.navbar label.logo {
+    color: black;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background: rgb(68,85,105);
+    transition: .5s;
+}
+
+.navbar .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .navbar label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .navbar .checkbtn {
+        display: block;
+    }
+
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+
+
+.navbar .title {
+    font-size: 24px; 
+    color: #004B6E;
+    padding-left: 15px;
+    font-weight: 700;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar .title {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .navbar .title {
+      font-size: 19px; /* Further adjust font size for even smaller screens */
+    }
+  }

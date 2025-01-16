@@ -1,0 +1,151 @@
+/* FindStudent.css */
+
+.findStudent {
+    margin: 1rem ;
+    width: calc(100% - 50px) !important;
+    
+  }
+  
+  .findStudent h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+   
+  .findStudentForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .findStudentForm .form{
+    display: block;
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .findStudent .form-control {
+    margin-bottom: 15px;
+    display: inline-block;
+    max-width: unset;
+    width: 50%;
+  }
+  
+  .form-control label {
+    
+    margin-bottom: 5px;
+    color: black
+  }
+  
+  .form-control input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .form-control select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+  }
+
+  .findStudentForm .btn{
+    width: 150px;
+    display: block;
+    
+
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  .generate-btn {
+    /* width: 100%; */
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004B6E;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .generate-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-container {
+    max-width: 350px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: rgb(0, 30, 60);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+  }
+  
+  .result-container label {
+    margin-right: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+
+  @media (max-width: 768px) {
+    .findStudent h1 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .findStudentForm {
+      flex-direction: column; /* Stack items vertically */
+      align-items: stretch;
+    }
+  
+    .findStudent .form-control {
+      width: 100%; /* Full width for form controls */
+    }
+  
+    .findStudentForm .btn {
+      max-width: 100%; /* Remove max-width constraint */
+    }
+  
+    .result-container {
+      max-width: 100%; /* Allow result container to stretch */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .findStudent h1 {
+      font-size: 18px; /* Further adjust for very small screens */
+    }
+  
+    .btn, .generate-btn {
+      font-size: 14px; /* Adjust button font size */
+      padding: 8px; /* Reduce padding */
+    }
+  }

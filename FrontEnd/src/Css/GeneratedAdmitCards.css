@@ -1,0 +1,155 @@
+
+.admit-card {
+  width: 90%;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 20px auto;
+}
+
+.admit-card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.school-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.admit-card-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.admit-card-header p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.admit-card-body {
+  margin-bottom: 20px;
+}
+
+.admit-card-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.admit-card-detail label {
+  font-weight: bold;
+}
+
+.admit-card-footer {
+  text-align: center;
+}
+
+.student-details-admit{
+  display: flex;
+  align-items: baseline;
+  margin-left: 15px;
+}
+
+@media screen and (max-width:600px) {
+    .student-details-admit{
+      margin-left: 5px;
+    }
+    .student-details-admit > table tr {
+      font-size: 0.5rem; /* Equivalent to ~8px (16px base font size) */
+    }
+    
+    .admit-card-body{
+      font-size: 10px !important;
+    }
+    .exam-schedule-table {
+      font-size: 10px !important;
+    }
+    .admit-card-header p{
+      font-size: 10px;
+    }
+    .admit-card-header h2{
+      font-size: 14px;
+    }
+    .session{
+      font-size: 10px;
+    }
+}
+.generated-Admit-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+@media print {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .generated-Admit-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .admit-card:nth-child(2n) {
+    page-break-after: always;
+  }
+  .admit-card-header {
+    margin-bottom: 5px;
+  }
+  .admit-card-body {
+    margin-bottom: 5px;
+  }
+  
+.admit-card {
+  padding: 10px;
+  margin: 10px auto;
+  /* height: 500px; */
+}
+
+.admit-card-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.admit-card-header p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.admit-card-body {
+  margin-bottom: 2px;
+}
+
+.admit-card-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.student-details-admit{
+  display: flex;
+  align-items: baseline;
+  margin-left: 15px;
+  font-size: 12px;
+}
+.exam-schedule-table table tbody tr{
+  font-size: 10px;
+}
+.exam-schedule-table table thead tr{
+  font-size: 10px;
+}
+
+.session{
+  font-size: 12px;
+}
+.student-details-admit table{
+  font-size: 12px;
+}
+}

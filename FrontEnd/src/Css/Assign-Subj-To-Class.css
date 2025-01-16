@@ -1,0 +1,196 @@
+/* General container for the mapping page */
+.subject-class-mapping-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Left section (Form section) */
+.left-section {
+  width: 45%; /* Default width */
+  text-align: left;
+}
+
+.subject-class-mapping-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subject-class-mapping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subject-class-mapping-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subject-class-mapping-form select,
+.subject-class-mapping-form button {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subject-checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subject-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.subject-checkbox input {
+  margin-right: 5px;
+}
+
+.subject-class-mapping-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subject-class-mapping-form button:hover {
+  background-color: #0056b3;
+}
+
+.subject-class-mapping-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Cancel Edit button styling */
+.subject-class-mapping-form button[type="button"] {
+  background-color: #dc3545;
+}
+
+.subject-class-mapping-form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Right section (Mappings section) */
+.right-section {
+  width: 45%; /* Default width */
+  text-align: right;
+}
+
+.right-section h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subject-class-mapping-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-class-mapping-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left; /* Ensures content inside each mapping aligns properly */
+}
+
+.subject-class-mapping-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.subject-class-mapping-list strong {
+  font-weight: bold;
+}
+
+.subject-class-mapping-list button {
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subject-class-mapping-list button:hover {
+  background-color: #0056b3;
+}
+
+.subject-class-mapping-list button:last-of-type {
+  background-color: #dc3545;
+}
+
+.subject-class-mapping-list button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Adjustments */
+
+/* For smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .subject-class-mapping-container {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 15px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; /* Full width for each section */
+    text-align: center; /* Center text for better alignment */
+  }
+
+  .subject-class-mapping-header,
+  .right-section h2 {
+    font-size: 1.25rem; /* Reduce font size */
+  }
+
+  .subject-class-mapping-form select,
+  .subject-class-mapping-form button {
+    font-size: 0.9rem; /* Adjust for smaller screens */
+  }
+
+  .subject-class-mapping-list li {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .subject-class-mapping-header,
+  .right-section h2 {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .subject-class-mapping-form select,
+  .subject-class-mapping-form button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .subject-class-mapping-list li {
+    font-size: 0.8rem;
+  }
+
+  .subject-class-mapping-list button {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,261 @@
+  /* add-form.css */
+.class{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 5px;
+}
+
+.classes-table{
+  margin: 10px;
+  flex:1;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.feesTypePage{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feesTypePage div:nth-child(2){
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.add-form {
+    margin: 10px 10px;
+    padding: 10px;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .add-form .form-control{
+    max-width: 300px;
+  }
+  .add-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input[type="text"],
+  .form-control input[type="number"],.form-control select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 75, 110);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: auto;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .section-box{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fee-grp-row-itemleft{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+    gap:4rem;
+    flex-direction: row;
+  }
+  .fee-grp-row-itemleft>div{
+    
+    margin-top: 12px;
+  }
+
+
+  /* table */
+  /* CSS for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  
+}
+
+th, td {
+  /* border: 1px solid #ddd; */
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* CSS for buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem; /* Adjusted to use relative units */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem; /* Relative font size for better scalability */
+  margin: 0.25rem 0.125rem; /* Smaller margins with relative units */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for interactivity */
+} 
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* CSS for edit and delete buttons inside table */
+td button {
+  margin-right: 5px;
+}
+
+td button:last-child {
+  margin-right: 0;
+}
+
+
+.section-cell{
+  letter-spacing: 4px;
+}
+
+
+/* feegroup */
+/* CSS for fee group div */
+.fee-group {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.fee-group div label {
+  display: block;
+  font-weight: bold;
+}
+
+.fee-group div input,
+.fee-group div select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.fee-group button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.fee-group button:hover {
+  background-color: #45a049;
+}
+
+
+.fee-grp-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fee-grp-row > div{
+  text-align: left;
+}
+
+.fee-grp-row > div:first-child{
+  flex:1;
+}
+
+.btn-dlt{
+  background-color: red;
+  
+}
+
+.fee-group button.btn-dlt svg{
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:640px) {
+  .class{
+    flex-direction: column;
+  }
+  .feesTypePage{
+    flex-direction: column;
+  }
+  .add-form{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  .classes-table{
+    width: 100%;
+    margin: 0px;
+  }
+  .fee-grp-row-itemleft{
+    
+    flex-direction: column;
+    gap:1rem;
+    align-items: flex-start;
+    /* justify-content: ; */
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 0.875rem; /* Slightly smaller font for small screens */
+    padding: 0.4rem 0.8rem; /* Adjusted padding */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  button {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
